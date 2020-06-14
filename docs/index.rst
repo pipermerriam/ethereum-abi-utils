@@ -1,8 +1,3 @@
-.. Ethereum ABI Utils documentation master file, created by
-   sphinx-quickstart on Fri Feb 19 14:30:29 2016.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
-
 Welcome to the eth-abi documentation!
 =====================================
 
@@ -34,11 +29,10 @@ Table of Contents
     grammar
     tools
     eth_abi
-    releases
+    release_notes
 
 
 Indices and Tables
 ------------------
 
 * :ref:`API Glossary <genindex>`
-* :ref:`modindex`

@@ -22,7 +22,8 @@ def make_word(description: str) -> bytes:
     'leftpadchar<' or '>rightpadchar') and an optional byte width directive
     (e.g. '(4 wide)').  Generated words are 32 bytes wide by default.
 
-    Examples:
+    Examples
+    --------
     >>> # Left padding examples
     >>> assert make_word('0<deadbeef') == zpad32(b'\xde\xad\xbe\xef')
     >>> assert make_word('f<deadbeef') == fpad32(b'\xde\xad\xbe\xef')
@@ -31,6 +32,7 @@ def make_word(description: str) -> bytes:
     >>> # Right padding examples
     >>> assert make_word('deadbeef>0') == zpad32_right(b'\xde\xad\xbe\xef')
     >>> assert make_word('deadbeef>0 (8 wide)') == b'\xde\xad\xbe\xef\x00\x00\x00\x00'
+
     """
     match = WORD_DESC_RE.search(description)
     if match is None:
@@ -57,9 +59,11 @@ def words(*descriptions: str) -> bytes:
     Converts multiple word descriptions into 32-byte words joined into a single
     byte string.
 
-    Examples:
+    Examples
+    --------
     >>> assert words('1') == zpad32(b'\x01')
     >>> assert words('1', '2f>0') == zpad32(b'\x01') + zpad32_right(b'\x2f')
+
     """
     return b''.join(make_word(d) for d in descriptions)
 

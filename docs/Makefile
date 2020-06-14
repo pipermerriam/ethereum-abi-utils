@@ -87,9 +87,9 @@ qthelp:
 	@echo
 	@echo "Build finished; now you can run "qcollectiongenerator" with the" \
 	      ".qhcp project file in $(BUILDDIR)/qthelp, like this:"
-	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/EthereumAlarmClock.qhcp"
+	@echo "# qcollectiongenerator $(BUILDDIR)/qthelp/eth_abi"
 	@echo "To view the help file:"
-	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/EthereumAlarmClock.qhc"
+	@echo "# assistant -collectionFile $(BUILDDIR)/qthelp/eth_abi"
 
 applehelp:
 	$(SPHINXBUILD) -b applehelp $(ALLSPHINXOPTS) $(BUILDDIR)/applehelp
@@ -104,8 +104,8 @@ devhelp:
 	@echo
 	@echo "Build finished."
 	@echo "To view the help file:"
-	@echo "# mkdir -p $$HOME/.local/share/devhelp/EthereumAlarmClock"
-	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/EthereumAlarmClock"
+	@echo "# mkdir -p $$HOME/.local/share/devhelp/eth_abi"
+	@echo "# ln -s $(BUILDDIR)/devhelp $$HOME/.local/share/devhelp/eth_abi"
 	@echo "# devhelp"
 
 epub:

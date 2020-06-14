@@ -81,7 +81,7 @@ class ContextFramesBytesIO(io.BytesIO):
         """
         Seeks relative to the total offset of the current contextual frames.
         """
-        super().seek(self._total_offset + pos, *args, **kwargs)
+        self.seek(self._total_offset + pos, *args, **kwargs)
 
     def push_frame(self, offset):
         """

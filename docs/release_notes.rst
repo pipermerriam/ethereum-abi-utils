@@ -1,6 +1,24 @@
 Release Notes
 =============
 
+.. towncrier release notes start
+
+eth-abi v2.1.1 (2020-02-27)
+--------------------------
+
+Bugfixes
+~~~~~~~~
+
+- If subclassing :meth:`eth_abi.decoding.ContextFramesBytesIO.seek`, the new method was not
+  being used by :meth:`~eth_abi.decoding.ContextFramesBytesIO.seek_in_frame`. Now it will be. (`#139 <https://github.com/ethereum/eth-abi/issues/139>`__)
+
+
+Internal Changes - for eth_abi contributors
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+- Merged in project template, for changes in release scripts, docs, release notes, etc. (`#140 <https://github.com/ethereum/eth-abi/issues/140>`__)
+
+
 v2.1.0
 ------
 
