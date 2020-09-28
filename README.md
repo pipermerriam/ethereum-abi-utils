@@ -2,8 +2,8 @@
 
 [![Join the chat at https://gitter.im/ethereum/eth-abi](https://badges.gitter.im/ethereum/eth-abi.svg)](https://gitter.im/ethereum/eth-abi?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Build Status](https://circleci.com/gh/ethereum/eth-abi.svg?style=shield)](https://circleci.com/gh/ethereum/eth-abi)
-[![PyPI version](https://badge.fury.io/py/eth_abi.svg)](https://badge.fury.io/py/eth_abi)
-[![Python versions](https://img.shields.io/pypi/pyversions/eth_abi.svg)](https://pypi.python.org/pypi/eth_abi)
+[![PyPI version](https://badge.fury.io/py/eth-abi.svg)](https://badge.fury.io/py/eth-abi)
+[![Python versions](https://img.shields.io/pypi/pyversions/eth-abi.svg)](https://pypi.python.org/pypi/eth-abi)
 [![Docs build](https://readthedocs.org/projects/eth-abi/badge/?version=latest)](http://eth-abi.readthedocs.io/en/latest/?badge=latest)
    
 
