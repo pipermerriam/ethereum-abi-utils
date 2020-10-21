@@ -5,7 +5,7 @@ from setuptools import (
     find_packages,
 )
 
-HYPOTHESIS_REQUIREMENT = "hypothesis>=3.6.1,<4"
+HYPOTHESIS_REQUIREMENT = "hypothesis>=4.18.2,<5.0.0"
 
 extras_require = {
     'tools': [
