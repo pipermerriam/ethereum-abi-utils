@@ -22,6 +22,7 @@ from .base import (
     BaseCoder,
 )
 from .exceptions import (
+    ABITypeError,
     MultipleEntriesFound,
     NoEntriesFound,
 )
@@ -459,7 +460,7 @@ class ABIRegistry(Copyable, BaseRegistry):
         """
         try:
             self.get_encoder(type_str)
-        except NoEntriesFound:
+        except (ABITypeError, NoEntriesFound):
             return False
         else:
             return True
